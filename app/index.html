@@ -18,6 +18,7 @@
 <body>
 
   <div class="container">
+
     <div class="sidebar">
       <header class="sidebar-header">
         <a href="#">
@@ -119,20 +120,169 @@
             <p class="sidebar-footer__position">Project Manager</p>
           </div>
         </div>
-        
+
       </footer>
 
     </div>
 
     <section class="content">
+      <h2 class="content__title">Hello Evano 👋🏼,</h2>
 
+      <div class="content__block">
+
+        <div class="content__header">
+          <div class="content__header-left">
+            <h3 class="content__header-title">All Customers</h3>
+            <p class="content__header-text">Active Members</p>
+          </div>
+
+          <div class="content__header-right">
+            <label class="content__header-label" for="search_id">
+              <img src="images/search.svg" width="24" height="24" alt="search icon">
+            </label>
+            <input class="content__header-search" id="search_id" placeholder="Search" type="text">
+          </div>
+        </div>
+
+        <div class="data">
+          <table class="data__table">
+            <thead>
+              <tr>
+                <th class="data__th">Customer Name</th>
+                <th class="data__th">Company</th>
+                <th class="data__th">Phone Number</th>
+                <th class="data__th">Email</th>
+                <th class="data__th">Country</th>
+                <th class="data__th">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="data__td-text">Jane Cooper</td>
+                <td class="data__td-text">Microsoft</td>
+                <td class="data__td-text">(225) 555-0118</td>
+                <td class="data__td-text">jane@microsoft.com</td>
+                <td class="data__td-text">United States</td>
+                <td class="data__td-btn">
+                  <button class="data__row-button btn__active">Active</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="data__td-text">Floyd Miles</td>
+                <td class="data__td-text">Yahoo</td>
+                <td class="data__td-text">(205) 555-0100</td>
+                <td class="data__td-text">floyd@yahoo.com</td>
+                <td class="data__td-text">Kiribati</td>
+                <td class="data__td-btn">
+                  <button class="data__row-button btn__inactive">Inactive</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="data__td-text">Ronald Richards</td>
+                <td class="data__td-text">Adobe</td>
+                <td class="data__td-text">(302) 555-0107</td>
+                <td class="data__td-text">ronald@adobe.com</td>
+                <td class="data__td-text">Israel</td>
+                <td class="data__td-btn">
+                  <button class="data__row-button btn__inactive">Inactive</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="data__td-text">Marvin McKinney</td>
+                <td class="data__td-text">Tesla</td>
+                <td class="data__td-text">(252) 555-0126</td>
+                <td class="data__td-text">marvin@tesla.com</td>
+                <td class="data__td-text">Iran</td>
+                <td class="data__td-btn">
+                  <button class="data__row-button btn__active">Active</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="data__td-text">Jerome Bell</td>
+                <td class="data__td-text">Google</td>
+                <td class="data__td-text">(629) 555-0129</td>
+                <td class="data__td-text">jerome@google.com</td>
+                <td class="data__td-text">Réunion</td>
+                <td class="data__td-btn">
+                  <button class="data__row-button btn__active">Active</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="data__td-text">Kathryn Murphy</td>
+                <td class="data__td-text">Microsoft</td>
+                <td class="data__td-text">(406) 555-0120</td>
+                <td class="data__td-text">kathryn@microsoft.com</td>
+                <td class="data__td-text">Curaçao</td>
+                <td class="data__td-btn">
+                  <button class="data__row-button btn__active">Active</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="data__td-text">Jacob Jones</td>
+                <td class="data__td-text">Yahoo</td>
+                <td class="data__td-text">(208) 555-0112</td>
+                <td class="data__td-text">jacob@yahoo.com</td>
+                <td class="data__td-text">Brazil</td>
+                <td class="data__td-btn">
+                  <button class="data__row-button btn__active">Active</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="data__td-text">Kristin Watson</td>
+                <td class="data__td-text">Facebook</td>
+                <td class="data__td-text">(704) 555-0127</td>
+                <td class="data__td-text">kristin@facebook.com</td>
+                <td class="data__td-text">Åland Islands</td>
+                <td class="data__td-btn">
+                  <button class="data__row-button btn__inactive">Inactive</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="data__footer">
+            <p class="data__footer-text">
+              Showing data 1 to 8 of  256K entries
+            </p>
+            <ul class="data__footer-pagination">
+              <li>
+                <button class="pagination-previous pagination-btn">
+                  <img src="images/al.svg" width="8" height="12" alt="previous icon">
+                </button>
+              </li>
+              <li>
+                <button class="pagination-btn active">1</button>
+              </li>
+              <li>
+                <button class="pagination-btn">2</button>
+              </li>
+              <li>
+                <button class="pagination-btn">3</button>
+              </li>
+              <li>
+                <button class="pagination-btn">4</button>
+              </li>
+
+              <li>...</li>
+              <li>
+                <button class="pagination-end pagination-btn">40</button>
+              </li>
+              <li>
+                <button class="pagination-next pagination-btn">
+                  <img src="images/ar.svg" width="8" height="12" alt="next icon">
+                </button>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
     </section>
 
   </div>
 
 
-
-  <!-- <script src="js/main.min.js"></script> -->
 </body>
 
 </html>
