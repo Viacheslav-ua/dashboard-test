@@ -10,11 +10,15 @@
   .sidebar-header__avatar {
     visibility: hidden;
     display: none;
+    height: 0;
+    width: 0;
   }
 
   .sidebar-header__content-title {
     visibility: hidden;
     display: none;
+    height: 0;
+    width: 0;
   }
 
   .sidebar-navigate {
@@ -32,6 +36,13 @@
 @media(min-width: 900px) {
   .sidebar-header__title {
     font-size: 26px;
+  }
+
+  .data__list-card {
+    visibility: hidden;
+    display: none;
+    height: 0;
+    width: 0;
   }
 }
 
@@ -150,6 +161,15 @@
     width: 0;
     visibility: hidden;
     display: none;
+  }
+
+  .data__list-card {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .sidebar {
