@@ -3,20 +3,24 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
+@import 'rules';
 
 .sidebar-header {
-  margin-top: 36px;
   display: flex;
   align-items: center;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
 
   &__title {
     color: #000;
     margin-left: 8px;
     margin-right: 4px;
     font-family: Poppins;
-    font-size: 26px;
     font-weight: 600;
-    letter-spacing: 0.26px; 
+    letter-spacing: 0.26px;
   }
 
   &__version {
@@ -24,20 +28,16 @@
     font-family: Poppins;
     font-size: 10px;
     font-weight: 500;
-    letter-spacing: -0.1px; 
+    letter-spacing: -0.1px;
   }
 }
 
 .sidebar-navigate {
-  margin-top: 65px;
   flex: 1 0 auto;
-
-  &__list {
-    width: 250px;
-  }
 
   &__item {
     margin-bottom: 19px;
+    max-width: 250px;
   }
 
   &__link {
@@ -81,7 +81,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  letter-spacing: -0.14px; 
+  letter-spacing: -0.14px;
 }
 
 .navigate-arrow {
@@ -94,7 +94,7 @@
   height: 118px;
   width: 100%;
   margin: 0 auto;
-  
+
   &__avatar {
     display: flex;
     align-items: center;
@@ -109,7 +109,7 @@
     font-family: Poppins;
     font-size: 14px;
     font-weight: 500;
-    letter-spacing: 0.14px; 
+    letter-spacing: 0.14px;
   }
 
   &__position {
@@ -117,15 +117,13 @@
     font-family: Poppins;
     font-size: 12px;
     font-weight: 400;
-    letter-spacing: 0.12px; 
+    letter-spacing: 0.12px;
   }
 }
 
 .content {
   padding-top: 41px;
-  padding-left: 4.9vw;
-  padding-right: 6.6vw;
-  
+
   &__title {
     color: #000;
     font-family: Poppins;
@@ -133,37 +131,32 @@
     font-weight: 500;
     margin-bottom: 51px;
   }
+
   &__block {
     width: 100%;
     border-radius: 26px;
-    background-color:white;
-    box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.50);  
+    background-color: white;
+    box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.50);
     padding-top: 30px;
-    padding-left: 38px;
-    padding-right: 40px;
     padding-bottom: 40px;
-  
   }
-  &__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-  }
+
   &__header-title {
     color: #000;
     font-family: Poppins;
     font-size: 22px;
     font-weight: 600;
-    letter-spacing: -0.22px; 
+    letter-spacing: -0.22px;
   }
+
   &__header-text {
     color: #16C098;
     font-family: Poppins;
     font-size: 14px;
     font-weight: 400;
-    letter-spacing: -0.14px; 
+    letter-spacing: -0.14px;
   }
+
   &__header-right {
     display: flex;
     align-items: center;
@@ -172,11 +165,13 @@
     padding-right: 8px;
     width: 216px;
     height: 38px;
-     
+
   }
+
   &__header-label {
     margin: 7px 8px;
   }
+
   &__header-search {
     border: none;
     outline: none;
@@ -184,7 +179,7 @@
     font-size: 12px;
     font-weight: 400;
     width: 100%;
-    letter-spacing: -0.12px; 
+    letter-spacing: -0.12px;
   }
 }
 
@@ -193,24 +188,20 @@
   font-size: 14px;
   font-weight: 500;
   letter-spacing: -0.14px;
+
   &__table {
     display: grid;
     border-collapse: collapse;
     min-width: 100%;
-    grid-template-columns: 
-    minmax(130px, 1.5fr)
-    minmax(80px, 1.2fr)
-    minmax(120px, 1.2fr)
-    minmax(180px, 1.2fr)
-    minmax(100px, 1.2fr)
-    minmax(80px, 80px)
+    grid-template-columns:
+      minmax(130px, 1.5fr) minmax(80px, 1.2fr) minmax(120px, 1.2fr) minmax(180px, 1.2fr) minmax(100px, 1.2fr) minmax(80px, 80px)
   }
 
   & thead,
   & tbody,
   & tr {
-      display: contents;
-    }
+    display: contents;
+  }
 
   &__th {
     color: #B5B7C0;
@@ -221,14 +212,16 @@
     white-space: nowrap;
     text-align: left;
   }
+
   &__td-text {
     color: #292D32;
     padding: 23px 0;
     border-bottom: 1px solid #eee;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap; 
+    white-space: nowrap;
   }
+
   &__td-btn {
     display: flex;
     align-items: center;
@@ -244,14 +237,6 @@
     cursor: pointer;
   }
 
-
-  &__footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 30px;
-  }
-
   &__footer-text {
     color: #B5B7C0;
     font-family: Poppins;
@@ -259,23 +244,25 @@
     font-weight: 500;
     letter-spacing: -0.14px;
   }
+
   &__footer-pagination {
     display: flex;
     align-items: center;
     gap: 12px;
-    }
+  }
 }
 
 .btn {
   &__active {
-    color: #008767; 
-    border: 1px solid #00B087; 
-    background: rgba(22, 192, 152, 0.38); 
+    color: #008767;
+    border: 1px solid #00B087;
+    background: rgba(22, 192, 152, 0.38);
   }
+
   &__inactive {
-    color: #DF0404; 
+    color: #DF0404;
     border: 1px solid #DF0404;
-    background: #FFC5C5; 
+    background: #FFC5C5;
   }
 }
 
@@ -288,7 +275,6 @@
   border-radius: 4px;
   border: 1px solid #EEE;
   background-color: #F5F5F5;
-
   color: #404B52;
   font-family: Poppins;
   font-size: 12px;
@@ -296,20 +282,19 @@
   line-height: 100%;
   letter-spacing: -0.12px;
   cursor: pointer;
+
   &.active {
     border: 1px solid #5932EA;
     background: #5932EA;
     color: white;
     cursor: default;
+
     &:hover {
       scale: 1;
-    }  
+    }
   }
+
   &:hover {
     scale: 1.2;
-  } 
+  }
 }
-
-
-
-
